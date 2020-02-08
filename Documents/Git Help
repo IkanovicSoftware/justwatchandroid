@@ -1,0 +1,10 @@
+
+
+Merging
+* git checkout origin BRANCH
+* git add . 
+* git commit
+* git push 
+* git checkout PARENTBRANCH
+* git merge origin/BRANCH
+* git push

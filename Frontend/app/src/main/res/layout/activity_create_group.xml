@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".CreateGroupActivity">
+
+    <Button
+        android:id="@+id/button_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:background="#FF9800"
+        android:text="Create Group"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_invite" />
+
+    <EditText
+        android:id="@+id/input_invite"
+        android:layout_width="225dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="80dp"
+        android:background="#00FF9800"
+        android:cursorVisible="true"
+        android:ellipsize="start"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Invite users: user1, user2.."
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#60757575"
+        android:textColorHint="@drawable/selector_cursor"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_groupname" />
+
+    <EditText
+        android:id="@+id/input_groupname"
+        android:layout_width="225dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="116dp"
+        android:background="#00FF9800"
+        android:cursorVisible="true"
+        android:ellipsize="start"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Group Name"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#60757575"
+        android:textColorHint="@drawable/selector_cursor"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

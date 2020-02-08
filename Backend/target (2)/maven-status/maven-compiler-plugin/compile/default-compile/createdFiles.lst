@@ -1,0 +1,13 @@
+com\example\mysql\User.class
+com\example\repos\UserRepository.class
+com\example\controllers\PartyController.class
+com\example\controllers\FriendController.class
+com\example\JustWatchApplication.class
+com\example\mysql\Party.class
+com\example\mysql\Membership.class
+com\example\repos\MembershipRepository.class
+com\example\controllers\MembershipController.class
+com\example\repos\FriendRepository.class
+com\example\controllers\UserController.class
+com\example\repos\PartyRepository.class
+com\example\mysql\Friend.class

@@ -1,0 +1,65 @@
+http://coms-309-ks-8.misc.iastate.edu:8080/
+
+Server to client:
+    pause
+        * Pauses client
+        
+    time [INT] -- where to play at
+        * Sets client to this time in video
+        
+    timeat [LONG] [INT] -- [time to play at] - [where to play at]
+        * Ensures all clients play exactly at the same time
+        
+    newvideo [STRING]:
+        * Changes video on client
+    
+    seek [INT]:
+        * Seeks video to time
+    
+    queue [STRING INT STRING INT etc]:
+        * Sends a list of queued videos
+    
+    playvideo [STRING]:
+        * Plays a new video
+        
+    ctime [INT]:
+        * Current time the server is at
+    
+    cvideo [STRING]:
+        * Current video playing
+    
+Client to server:
+    pause:
+        * Tells server client paused - pause server
+    
+    play:
+        * Tells server client played - play server
+    
+    time [INT] 
+        * Tells server where client is in video
+        
+    setlen [INT]:
+        * Sets the length of th current video so the server knows when its over
+    
+    seek [INT]:
+        * Seeks the server and all users to specified time
+    
+    addvideo [STRING]:
+        * Adds video to server
+        
+    vote [STRING] [INT] -- video url, value - positive upvote negative downvote
+        * Modifies vote for video
+    
+    gettime:
+        * Requests video time from server 
+        
+    getvideo:
+        * Requests playing video
+    
+    getqueue:
+        * Requests queue from server
+    
+    skip:
+        * Advance to next video in queue if there is one
+    
+    
